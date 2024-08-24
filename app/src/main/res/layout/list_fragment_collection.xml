@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_4sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:id="@+id/img_icon"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/imgtext"
+                android:text="A"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_toEndOf="@id/img_icon"
+            android:id="@+id/txtCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Amazon"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_red"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@id/img_icon"
+            android:id="@+id/llName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_below="@+id/txtCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_grey"/>
+
+            <TextView
+                android:id="@+id/txtEmployeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:text="Aditya"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:text="Yesterday"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llAmount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_below="@+id/txtCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="₹ "
+                android:textColor="@color/red"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/txtAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtCompanyName"
+                android:text="1000"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+        <!--<ImageView
+            android:id="@+id/img_more"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/see_more"/>-->
+        <!--
+                <View
+                    android:layout_below="@+id/llAmount"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#c0c0c0"/>-->
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
